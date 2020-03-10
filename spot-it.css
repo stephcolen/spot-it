@@ -171,8 +171,8 @@ textarea {
     position:relative;
 }
 .print4x4 .card .card__item {
-    height: .9in;
-    width: .9in;
+    height: 100px;
+    width: 100px;
     float:left;
     position:absolute;
     border-radius: 50%;
@@ -182,8 +182,8 @@ textarea {
     background-color: transparent !important; /* override test colors */
 }
 .print4x4 .card .card__item img {
-    height: .9in;
-    width: .9in;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
 }
 .print4x4 .card .card__item__label {

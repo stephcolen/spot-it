@@ -169,7 +169,9 @@ function createItem(words, wordNum){
         if(label) content += '<span class="card__item__label">'+label+'</span>';
         imageClass = " card__item--image";
     }
-    return '<span class="card__item'+imageClass+'" data-item="'+wordNum+'" title="Item '+wordNum+'">'+content+'</span>';
+    var maxDimension = Math.round(Math.random() * 100 + 50);
+    return '<span class="card__item'+imageClass+'" data-item="'+wordNum+'" title="Item '+wordNum+
+        '" style="transform:rotate('+Math.round(Math.random() * 360)+'deg); max-height:'+maxDimension+'px;max-width:'+maxDimension+'px;">'+content+'</span>';
 }
 
 // stolen from some random stack overflow article that I forgot to write down
